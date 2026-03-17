@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadhronics - Skill Development Courses</title>
+    <meta name="description" content="Join our industry-aligned courses: Web Dev, Data Analytics, Cyber Security, Embedded Systems, PCB Design, IoT, Home Automation.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== SHARED HEADER ===== -->
+<header class="fixed top-0 left-0 w-full z-50 bg-glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold neon-cyan tracking-tighter">YADHRONICS</a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+            <a href="courses.html" class="hover:text-cyan-300 transition font-semibold text-cyan-400">Courses</a>
+            <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+            <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+            <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+            <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+            <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        </nav>
+        <div class="hidden md:block">
+            <a href="contact.html" class="btn-neon text-sm py-2 px-5">Get Project</a>
+        </div>
+        <button id="menuBtn" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 px-6 py-4 text-sm flex flex-col space-y-4">
+        <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+        <a href="courses.html" class="hover:text-cyan-300 transition text-cyan-400 font-semibold">Courses</a>
+        <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+        <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+        <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+        <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        <a href="contact.html" class="btn-neon text-center mt-2">Get Project</a>
+    </div>
+</header>
+<!-- ===== END SHARED HEADER ===== -->
+
+<main class="pt-24">
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-center">Skill <span class="neon-cyan">Development</span> Courses</h1>
+        <p class="text-center text-gray-400 mt-4 mb-16">Hands-on training by industry experts</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <i class="fa-brands fa-js text-4xl neon-cyan"></i>
+                <h3 class="text-2xl font-semibold mt-4">Web Development</h3>
+                <p class="text-sm text-gray-400 mt-2">Full-stack (MERN) with projects. Duration: 12 weeks</p>
+                <div class="my-4">
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded mr-1">HTML/CSS/JS</span>
+                    <span class="text-xs bg-fuchsia-500/20 px-2 py-1 rounded mr-1">React</span>
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded">Node.js</span>
+                </div>
+                <a href="contact.html" class="btn-neon text-sm mt-4 inline-block">Enroll Now</a>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <i class="fa-solid fa-chart-line text-4xl neon-magenta"></i>
+                <h3 class="text-2xl font-semibold mt-4">Data Analytics</h3>
+                <p class="text-sm text-gray-400 mt-2">Python, SQL, PowerBI, Statistics. Duration: 10 weeks</p>
+                <div class="my-4">
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded mr-1">Pandas</span>
+                    <span class="text-xs bg-fuchsia-500/20 px-2 py-1 rounded">Tableau</span>
+                </div>
+                <a href="contact.html" class="btn-neon text-sm mt-4 inline-block">Enroll Now</a>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <i class="fa-solid fa-shield-halved text-4xl neon-cyan"></i>
+                <h3 class="text-2xl font-semibold mt-4">Cyber Security</h3>
+                <p class="text-sm text-gray-400 mt-2">Ethical hacking, network security. Duration: 8 weeks</p>
+                <div class="my-4">
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded mr-1">Kali</span>
+                    <span class="text-xs bg-fuchsia-500/20 px-2 py-1 rounded">Wireshark</span>
+                </div>
+                <a href="contact.html" class="btn-neon text-sm mt-4 inline-block">Enroll Now</a>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <i class="fa-solid fa-microchip text-4xl neon-magenta"></i>
+                <h3 class="text-2xl font-semibold mt-4">Embedded Systems</h3>
+                <p class="text-sm text-gray-400 mt-2">ARM, RTOS, firmware. Duration: 10 weeks</p>
+                <div class="my-4">
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded mr-1">ARM</span>
+                    <span class="text-xs bg-fuchsia-500/20 px-2 py-1 rounded">RTOS</span>
+                </div>
+                <a href="contact.html" class="btn-neon text-sm mt-4 inline-block">Enroll Now</a>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <i class="fa-solid fa-circle-nodes text-4xl neon-cyan"></i>
+                <h3 class="text-2xl font-semibold mt-4">PCB Design</h3>
+                <p class="text-sm text-gray-400 mt-2">Altium, Eagle, layout rules. Duration: 6 weeks</p>
+                <div class="my-4">
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded mr-1">Altium</span>
+                    <span class="text-xs bg-fuchsia-500/20 px-2 py-1 rounded">Eagle</span>
+                </div>
+                <a href="contact.html" class="btn-neon text-sm mt-4 inline-block">Enroll Now</a>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <i class="fa-solid fa-wifi text-4xl neon-magenta"></i>
+                <h3 class="text-2xl font-semibold mt-4">IoT Development</h3>
+                <p class="text-sm text-gray-400 mt-2">ESP32, MQTT, cloud integration. Duration: 8 weeks</p>
+                <div class="my-4">
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded mr-1">ESP32</span>
+                    <span class="text-xs bg-fuchsia-500/20 px-2 py-1 rounded">MQTT</span>
+                </div>
+                <a href="contact.html" class="btn-neon text-sm mt-4 inline-block">Enroll Now</a>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <i class="fa-solid fa-house-signal text-4xl neon-cyan"></i>
+                <h3 class="text-2xl font-semibold mt-4">Home Automation</h3>
+                <p class="text-sm text-gray-400 mt-2">Smart devices, Blynk, voice control. Duration: 6 weeks</p>
+                <div class="my-4">
+                    <span class="text-xs bg-cyan-500/20 px-2 py-1 rounded mr-1">Blynk</span>
+                    <span class="text-xs bg-fuchsia-500/20 px-2 py-1 rounded">Alexa</span>
+                </div>
+                <a href="contact.html" class="btn-neon text-sm mt-4 inline-block">Enroll Now</a>
+            </div>
+        </div>
+
+        <div class="mt-16 bg-gradient-to-r from-cyan-900/30 to-fuchsia-900/30 p-12 rounded-3xl text-center border border-white/10">
+            <h2 class="text-3xl font-bold">Corporate &amp; College Workshops</h2>
+            <p class="text-gray-300 mt-4 max-w-2xl mx-auto">Custom workshops tailored for your institution or company. We bring industry-grade training to your campus.</p>
+            <a href="contact.html" class="btn-neon btn-neon-magenta mt-8 inline-block">Request a Workshop</a>
+        </div>
+    </section>
+</main>
+
+<!-- ===== SHARED FOOTER ===== -->
+<footer class="bg-black/80 border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <div>
+            <a href="index.html" class="text-2xl font-bold neon-cyan">YADHRONICS</a>
+            <p class="text-sm text-gray-400 mt-4">Engineering the future, one project at a time.</p>
+        </div>
+        <div>
+            <h5 class="font-semibold">Quick Links</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="courses.html" class="hover:text-cyan-300 transition">Courses</a></li>
+                <li><a href="projects.html" class="hover:text-cyan-300 transition">Projects</a></li>
+                <li><a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a></li>
+                <li><a href="products.html" class="hover:text-cyan-300 transition">Store</a></li>
+                <li><a href="about.html" class="hover:text-cyan-300 transition">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Support</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="contact.html" class="hover:text-cyan-300 transition">Contact</a></li>
+                <li><a href="https://wa.me/918681847551" target="_blank" class="hover:text-cyan-300 transition">WhatsApp</a></li>
+                <li><a href="tel:+918681847551" class="hover:text-cyan-300 transition">+91 8681847551</a></li>
+                <li><a href="mailto:yadhronics.edukid@gmail.com" class="hover:text-cyan-300 transition">yadhronics.edukid@gmail.com</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Social</h5>
+            <div class="flex gap-4 mt-4 text-xl">
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/918681847551" target="_blank" class="hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-xs text-gray-600 mt-12">© 2025 Yadhronics – All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadhronics - About Us: Vision, Mission, Team</title>
+    <meta name="description" content="Yadhronics is a tech innovation company empowering students and startups through projects, training, and products.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== SHARED HEADER ===== -->
+<header class="fixed top-0 left-0 w-full z-50 bg-glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold neon-cyan tracking-tighter">YADHRONICS</a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+            <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+            <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+            <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+            <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+            <a href="about.html" class="hover:text-cyan-300 transition font-semibold text-cyan-400">About</a>
+            <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        </nav>
+        <div class="hidden md:block">
+            <a href="contact.html" class="btn-neon text-sm py-2 px-5">Get Project</a>
+        </div>
+        <button id="menuBtn" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 px-6 py-4 text-sm flex flex-col space-y-4">
+        <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+        <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+        <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+        <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+        <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+        <a href="about.html" class="hover:text-cyan-300 transition text-cyan-400 font-semibold">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        <a href="contact.html" class="btn-neon text-center mt-2">Get Project</a>
+    </div>
+</header>
+<!-- ===== END SHARED HEADER ===== -->
+
+<main class="pt-24">
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h1 class="text-5xl font-bold text-center">About <span class="neon-cyan">Yadhronics</span></h1>
+        <div class="grid md:grid-cols-2 gap-12 mt-16 items-center">
+            <div>
+                <h2 class="text-3xl font-semibold">Vision &amp; Mission</h2>
+                <p class="text-gray-300 mt-4">To bridge the gap between academic learning and industrial innovation by providing hands-on technology education and development support.</p>
+                <p class="text-gray-300 mt-4">We believe in learning by doing – whether it's a final year project, a corporate prototype, or a DIY kit.</p>
+            </div>
+            <div class="bg-glass p-8 rounded-2xl">
+                <i class="fa-solid fa-quote-right text-6xl neon-magenta opacity-30"></i>
+                <p class="text-xl italic mt-4">"Empowering the next generation of engineers and innovators."</p>
+            </div>
+        </div>
+
+        <div class="mt-20">
+            <h2 class="text-3xl font-bold text-center">Our <span class="neon-magenta">Team</span></h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-glass p-6 rounded-2xl text-center card-glow">
+                    <i class="fa-regular fa-circle-user text-6xl neon-cyan"></i>
+                    <h3 class="text-xl font-semibold mt-4">Er. Yogeshwaran</h3>
+                    <p class="text-sm text-gray-400">Founder &amp; CTO</p>
+                </div>
+                <div class="bg-glass p-6 rounded-2xl text-center card-glow">
+                    <i class="fa-regular fa-circle-user text-6xl neon-magenta"></i>
+                    <h3 class="text-xl font-semibold mt-4">Shiva</h3>
+                    <p class="text-sm text-gray-400">Head of Education</p>
+                </div>
+                <div class="bg-glass p-6 rounded-2xl text-center card-glow">
+                    <i class="fa-regular fa-circle-user text-6xl neon-cyan"></i>
+                    <h3 class="text-xl font-semibold mt-4">Aravind</h3>
+                    <p class="text-sm text-gray-400">Lead Engineer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 bg-glass p-12 rounded-3xl text-center">
+            <h2 class="text-3xl font-bold">Innovation Culture</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mt-4">We are a team of engineers, makers, and educators passionate about technology. We work with colleges, startups, and industry to turn ideas into reality.</p>
+            <a href="contact.html" class="btn-neon mt-8 inline-block">Work with us →</a>
+        </div>
+    </section>
+</main>
+
+<!-- ===== SHARED FOOTER ===== -->
+<footer class="bg-black/80 border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <div>
+            <a href="index.html" class="text-2xl font-bold neon-cyan">YADHRONICS</a>
+            <p class="text-sm text-gray-400 mt-4">Engineering the future, one project at a time.</p>
+        </div>
+        <div>
+            <h5 class="font-semibold">Quick Links</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="courses.html" class="hover:text-cyan-300 transition">Courses</a></li>
+                <li><a href="projects.html" class="hover:text-cyan-300 transition">Projects</a></li>
+                <li><a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a></li>
+                <li><a href="products.html" class="hover:text-cyan-300 transition">Store</a></li>
+                <li><a href="about.html" class="hover:text-cyan-300 transition">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Support</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="contact.html" class="hover:text-cyan-300 transition">Contact</a></li>
+                <li><a href="https://wa.me/918681847551" target="_blank" class="hover:text-cyan-300 transition">WhatsApp</a></li>
+                <li><a href="tel:+918681847551" class="hover:text-cyan-300 transition">+91 8681847551</a></li>
+                <li><a href="mailto:yadhronics.edukid@gmail.com" class="hover:text-cyan-300 transition">yadhronics.edukid@gmail.com</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Social</h5>
+            <div class="flex gap-4 mt-4 text-xl">
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/918681847551" target="_blank" class="hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-xs text-gray-600 mt-12">© 2025 Yadhronics – All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

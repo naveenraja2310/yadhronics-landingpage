@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadhronics - Innovate & Build</title>
+    <meta name="description" content="Yadhronics: Engineering project development, skill training, and electronics products for students, colleges, and startups.">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased">
+
+<!-- ===== SHARED HEADER ===== -->
+<header class="fixed top-0 left-0 w-full z-50 bg-glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold neon-cyan tracking-tighter">YADHRONICS</a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-cyan-300 transition font-semibold text-cyan-400">Home</a>
+            <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+            <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+            <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+            <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+            <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+            <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        </nav>
+        <div class="hidden md:block">
+            <a href="contact.html" class="btn-neon text-sm py-2 px-5">Get Project</a>
+        </div>
+        <button id="menuBtn" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 px-6 py-4 text-sm flex flex-col space-y-4">
+        <a href="index.html" class="hover:text-cyan-300 transition text-cyan-400 font-semibold">Home</a>
+        <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+        <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+        <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+        <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+        <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        <a href="contact.html" class="btn-neon text-center mt-2">Get Project</a>
+    </div>
+</header>
+<!-- ===== END SHARED HEADER ===== -->
+
+<main class="pt-24">
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-[90vh] flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="fade-up">
+                <span class="neon-magenta text-sm tracking-[0.2em]">YADHRONICS</span>
+                <h1 class="text-5xl md:text-6xl font-bold mt-4 leading-tight">Build<span class="neon-cyan">. Innovate</span><br>Transform<span class="neon-magenta">.</span></h1>
+                <p class="text-gray-300 text-lg mt-6 max-w-lg">Engineering project development, skill training, and electronics product development — for students, startups, and industry.</p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="courses.html" class="btn-neon"><i class="fa-regular fa-circle-play mr-2"></i>Enroll Course</a>
+                    <a href="projects.html" class="btn-neon border-fuchsia-500 text-fuchsia-500 hover:bg-fuchsia-500 hover:text-black"><i class="fa-regular fa-lightbulb mr-2"></i>Get Project</a>
+                    <a href="contact.html" class="border border-white/30 text-white px-6 py-2 rounded-full hover:bg-white/10 transition">Contact Us</a>
+                </div>
+            </div>
+            <div class="hidden md:block relative float-anim">
+                <i class="fa-solid fa-microchip text-[12rem] text-cyan-500/20 absolute -top-20 right-0"></i>
+                <i class="fa-solid fa-robot text-[8rem] text-fuchsia-500/20 bottom-0 left-0"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="max-w-7xl mx-auto px-6 py-24 grid-lines">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">Engineering <span class="neon-cyan">&amp;</span> innovation</h2>
+        <p class="text-center text-gray-400 mt-2 mb-16">End-to-end technology services</p>
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-glass p-6 rounded-2xl card-glow"><i class="fa-solid fa-diagram-project text-3xl neon-cyan"></i><h3 class="text-xl font-semibold mt-4">Project Dev</h3><p class="text-sm text-gray-400">Final year, IoT, AI, embedded</p></div>
+            <div class="bg-glass p-6 rounded-2xl card-glow"><i class="fa-solid fa-code text-3xl neon-magenta"></i><h3 class="text-xl font-semibold mt-4">Skill Courses</h3><p class="text-sm text-gray-400">Web, Data, Cyber, PCB</p></div>
+            <div class="bg-glass p-6 rounded-2xl card-glow"><i class="fa-solid fa-flask text-3xl neon-cyan"></i><h3 class="text-xl font-semibold mt-4">R&amp;D Support</h3><p class="text-sm text-gray-400">Prototype, product, consulting</p></div>
+            <div class="bg-glass p-6 rounded-2xl card-glow"><i class="fa-solid fa-microchip text-3xl neon-magenta"></i><h3 class="text-xl font-semibold mt-4">DIY Kits</h3><p class="text-sm text-gray-400">IoT, Robotics, educational</p></div>
+        </div>
+    </section>
+
+    <!-- Courses Highlights + Why Choose -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-bold">Popular <span class="neon-cyan">courses</span></h2>
+                <div class="space-y-4 mt-8">
+                    <div class="flex gap-4 items-center bg-glass p-4 rounded-xl"><i class="fa-brands fa-python text-2xl neon-cyan"></i><div><h4>Web Development</h4><p class="text-xs text-gray-400">Full-stack · 12 weeks</p></div></div>
+                    <div class="flex gap-4 items-center bg-glass p-4 rounded-xl"><i class="fa-solid fa-shield text-2xl neon-magenta"></i><div><h4>Cyber Security</h4><p class="text-xs text-gray-400">Ethical hacking · 8 weeks</p></div></div>
+                    <div class="flex gap-4 items-center bg-glass p-4 rounded-xl"><i class="fa-solid fa-robot text-2xl neon-cyan"></i><div><h4>Embedded Systems</h4><p class="text-xs text-gray-400">ARM, RTOS · 10 weeks</p></div></div>
+                    <a href="courses.html" class="inline-block mt-6 text-cyan-300 hover:underline">View all courses →</a>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold">Why <span class="neon-magenta">Yadhronics</span></h2>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-glass p-4 rounded-xl text-center"><i class="fa-regular fa-clock text-3xl neon-cyan"></i><p class="font-semibold mt-2">Industry aligned</p></div>
+                    <div class="bg-glass p-4 rounded-xl text-center"><i class="fa-regular fa-handshake text-3xl neon-magenta"></i><p class="font-semibold mt-2">1:1 Mentorship</p></div>
+                    <div class="bg-glass p-4 rounded-xl text-center"><i class="fa-regular fa-building text-3xl neon-cyan"></i><p class="font-semibold mt-2">300+ colleges</p></div>
+                    <div class="bg-glass p-4 rounded-xl text-center"><i class="fa-regular fa-certificate text-3xl neon-magenta"></i><p class="font-semibold mt-2">Certified</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section class="bg-glass py-20 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center">Student <span class="neon-cyan">success</span></h2>
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <div class="bg-black/40 p-6 rounded-2xl"><i class="fa-solid fa-quote-left text-3xl neon-magenta opacity-50"></i><p class="my-4 text-gray-300">"Yadhronics helped me build a production-ready IoT project. Got placed at a top firm."</p><div class="flex items-center gap-3"><i class="fa-regular fa-circle-user text-3xl"></i><div><b>Anjali S.</b><p class="text-xs">ECE student</p></div></div></div>
+                <div class="bg-black/40 p-6 rounded-2xl"><i class="fa-solid fa-quote-left text-3xl neon-magenta opacity-50"></i><p class="my-4 text-gray-300">"The PCB design course gave me hands-on experience. Now I design my own boards."</p><div class="flex items-center gap-3"><i class="fa-regular fa-circle-user text-3xl"></i><div><b>Rahul M.</b><p class="text-xs">Startup founder</p></div></div></div>
+                <div class="bg-black/40 p-6 rounded-2xl"><i class="fa-solid fa-quote-left text-3xl neon-magenta opacity-50"></i><p class="my-4 text-gray-300">"Our college partnered with Yadhronics for workshops – excellent industry exposure."</p><div class="flex items-center gap-3"><i class="fa-regular fa-circle-user text-3xl"></i><div><b>Prof. Sharma</b><p class="text-xs">HoD, CSE</p></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section class="max-w-7xl mx-auto px-6 py-24">
+        <h2 class="text-3xl font-bold text-center">Project <span class="neon-cyan">showcase</span></h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+            <div class="bg-glass rounded-xl overflow-hidden card-glow"><div class="h-40 bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/20 flex items-center justify-center"><i class="fa-solid fa-robot text-5xl"></i></div><div class="p-4"><h4>AI Rover</h4><p class="text-sm">Autonomous navigation with ROS</p></div></div>
+            <div class="bg-glass rounded-xl overflow-hidden card-glow"><div class="h-40 bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/20 flex items-center justify-center"><i class="fa-solid fa-microchip text-5xl"></i></div><div class="p-4"><h4>Smart Home Hub</h4><p class="text-sm">ESP32 + MQTT dashboard</p></div></div>
+            <div class="bg-glass rounded-xl overflow-hidden card-glow"><div class="h-40 bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/20 flex items-center justify-center"><i class="fa-solid fa-brain text-5xl"></i></div><div class="p-4"><h4>Edge AI Camera</h4><p class="text-sm">TensorFlow Lite on Raspberry Pi</p></div></div>
+        </div>
+        <div class="text-center mt-12"><a href="projects.html" class="btn-neon">Start your project →</a></div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="bg-gradient-to-r from-cyan-900/30 to-fuchsia-900/30 py-20 border-y border-white/10">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold">Ready to build the future?</h2>
+            <p class="text-gray-300 mt-4 text-lg">Join 5000+ students and 100+ companies who trust Yadhronics.</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="courses.html" class="btn-neon">Explore Courses</a>
+                <a href="contact.html" class="btn-neon btn-neon-magenta">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== SHARED FOOTER ===== -->
+<footer class="bg-black/80 border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <div>
+            <a href="index.html" class="text-2xl font-bold neon-cyan">YADHRONICS</a>
+            <p class="text-sm text-gray-400 mt-4">Engineering the future, one project at a time.</p>
+        </div>
+        <div>
+            <h5 class="font-semibold">Quick Links</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="courses.html" class="hover:text-cyan-300 transition">Courses</a></li>
+                <li><a href="projects.html" class="hover:text-cyan-300 transition">Projects</a></li>
+                <li><a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a></li>
+                <li><a href="products.html" class="hover:text-cyan-300 transition">Store</a></li>
+                <li><a href="about.html" class="hover:text-cyan-300 transition">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Support</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="contact.html" class="hover:text-cyan-300 transition">Contact</a></li>
+                <li><a href="https://wa.me/918681847551" target="_blank" class="hover:text-cyan-300 transition">WhatsApp</a></li>
+                <li><a href="tel:+918681847551" class="hover:text-cyan-300 transition">+91 8681847551</a></li>
+                <li><a href="mailto:yadhronics.edukid@gmail.com" class="hover:text-cyan-300 transition">yadhronics.edukid@gmail.com</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Social</h5>
+            <div class="flex gap-4 mt-4 text-xl">
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/918681847551" target="_blank" class="hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-xs text-gray-600 mt-12">© 2025 Yadhronics – All rights reserved.</p>
+</footer>
+<!-- ===== END SHARED FOOTER ===== -->
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadhronics - Contact Us</title>
+    <meta name="description" content="Get in touch with Yadhronics for project inquiries, course enrollment, or partnership.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        input, select, textarea { color: #ededed !important; background: rgba(0,0,0,0.5); }
+        input::placeholder, textarea::placeholder { color: #6b7280; }
+        select option { background: #0f0f1a; color: #ededed; }
+        .spinner { display:inline-block; width:16px; height:16px; border:2px solid #0ff; border-top-color:transparent; border-radius:50%; animation:spin 0.7s linear infinite; vertical-align:middle; margin-right:8px; }
+        @keyframes spin { to { transform:rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+<!-- ===== SHARED HEADER ===== -->
+<header class="fixed top-0 left-0 w-full z-50 bg-glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold neon-cyan tracking-tighter">YADHRONICS</a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+            <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+            <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+            <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+            <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+            <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+            <a href="contact.html" class="hover:text-cyan-300 transition font-semibold text-cyan-400">Contact</a>
+        </nav>
+        <div class="hidden md:block">
+            <a href="contact.html" class="btn-neon text-sm py-2 px-5">Get Project</a>
+        </div>
+        <button id="menuBtn" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 px-6 py-4 text-sm flex flex-col space-y-4">
+        <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+        <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+        <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+        <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+        <a href="products.html" class="hover:text-cyan-300 transition">Store</a>
+        <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition text-cyan-400 font-semibold">Contact</a>
+        <a href="contact.html" class="btn-neon text-center mt-2">Get Project</a>
+    </div>
+</header>
+
+<main class="pt-24">
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h1 class="text-5xl font-bold text-center">Get in <span class="neon-cyan">touch</span></h1>
+        <p class="text-center text-gray-400 mt-4 mb-16">We respond within 24 hours</p>
+
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <!-- ── Contact Info ── -->
+            <div class="bg-glass p-8 rounded-2xl">
+                <h2 class="text-2xl font-semibold neon-magenta mb-6">Contact details</h2>
+                <div class="space-y-5 text-sm">
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-phone neon-cyan text-xl w-6 text-center"></i>
+                        <a href="tel:+918681847551" class="hover:text-cyan-300 transition">+91 8681847551</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-brands fa-whatsapp neon-magenta text-xl w-6 text-center"></i>
+                        <a href="https://wa.me/918681847551" target="_blank" class="hover:text-fuchsia-300 transition">8681847551 (WhatsApp)</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-regular fa-envelope neon-cyan text-xl w-6 text-center"></i>
+                        <span>yadhronics.edukid&#64;gmail.com</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fa-regular fa-map neon-magenta text-xl w-6 text-center mt-0.5"></i>
+                        <span>22/54, Narayanaswamy layout,<br>Ondipudhur, Coimbatore &ndash; 641 005</span>
+                    </div>
+                </div>
+                <div class="mt-8 rounded-xl overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14176.666205846115!2d77.04493215!3d11.0062143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857ae058d2bf5%3A0x333f823d04593dd6!2sBUMP%20TO%20BORN!5e1!3m2!1sen!2sin!4v1773379783419!5m2!1sen!2sin"
+                        width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- ── Enquiry Form ── -->
+            <!--
+                HOW THIS WORKS:
+                Each input has a  name="..."  attribute.
+                emailjs.sendForm() reads those name values and maps them
+                directly as {{variable}} in your EmailJS template.
+
+                Your EmailJS template should contain:
+                  Name    : {{from_name}}
+                  Email   : {{from_email}}
+                  Phone   : {{from_phone}}
+                  Subject : {{subject}}
+                  Message : {{message}}
+            -->
+            <div class="bg-glass p-8 rounded-2xl">
+                <h2 class="text-2xl font-semibold neon-cyan mb-1">Send enquiry</h2>
+                <p class="text-sm text-gray-400 mb-6">
+                    All details go directly to
+                    <span class="text-cyan-400">yadhronics.edukid&#64;gmail.com</span>
+                </p>
+
+                <form id="enquiryForm">
+
+                    <!-- Full Name -->
+                    <div class="mb-4">
+                        <label class="block text-xs text-gray-400 mb-1 ml-1">Full Name *</label>
+                        <input
+                            type="text"
+                            name="from_name"
+                            id="fname"
+                            placeholder="e.g. Rahul Kumar"
+                            required
+                            class="w-full border border-white/10 rounded-lg px-4 py-3 focus:border-cyan-400 outline-none transition"
+                        >
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label class="block text-xs text-gray-400 mb-1 ml-1">Email Address *</label>
+                        <input
+                            type="email"
+                            name="from_email"
+                            id="femail"
+                            placeholder="e.g. rahul@email.com"
+                            required
+                            class="w-full border border-white/10 rounded-lg px-4 py-3 focus:border-cyan-400 outline-none transition"
+                        >
+                    </div>
+
+                    <!-- Mobile Number -->
+                    <div class="mb-4">
+                        <label class="block text-xs text-gray-400 mb-1 ml-1">Mobile Number * (10 digits)</label>
+                        <div class="flex">
+                            <span class="border border-white/10 border-r-0 rounded-l-lg px-3 py-3 text-gray-400 text-sm flex items-center whitespace-nowrap"
+                                  style="background:rgba(0,0,0,0.5)">
+                                &#127470;&#127475; +91
+                            </span>
+                            <input
+                                type="tel"
+                                name="from_phone"
+                                id="fphone"
+                                placeholder="9876543210"
+                                required
+                                maxlength="10"
+                                inputmode="numeric"
+                                pattern="[0-9]{10}"
+                                class="w-full border border-white/10 rounded-r-lg px-4 py-3 focus:border-cyan-400 outline-none transition"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Subject / Enquiry Type -->
+                    <div class="mb-4">
+                        <label class="block text-xs text-gray-400 mb-1 ml-1">Enquiry Type *</label>
+                        <select
+                            name="subject"
+                            id="fsubject"
+                            class="w-full border border-white/10 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 transition"
+                        >
+                            <option value="Project Enquiry">Project Enquiry</option>
+                            <option value="Course Enrollment">Course Enrollment</option>
+                            <option value="Partnership">Partnership</option>
+                            <option value="Product / Kit Purchase">Product / Kit Purchase</option>
+                            <option value="R&D Consulting">R&amp;D Consulting</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-5">
+                        <label class="block text-xs text-gray-400 mb-1 ml-1">Message *</label>
+                        <textarea
+                            name="message"
+                            id="fmessage"
+                            rows="4"
+                            placeholder="Describe your requirement..."
+                            required
+                            class="w-full border border-white/10 rounded-lg px-4 py-3 focus:border-cyan-400 outline-none transition resize-none"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button id="submitBtn" type="submit" class="btn-neon w-full text-center">
+                        <i class="fa-regular fa-paper-plane mr-2"></i> Submit Enquiry
+                    </button>
+                </form>
+
+                <!-- Success -->
+                <div id="formSuccess" style="display:none;"
+                     class="mt-4 p-4 rounded-xl text-center border border-cyan-400 text-cyan-300"
+                     style="background:rgba(0,255,255,0.07);">
+                    <i class="fa-solid fa-circle-check text-2xl"></i>
+                    <p class="mt-2 font-semibold">Message sent successfully!</p>
+                    <p class="text-sm text-gray-400 mt-1">We will reply within 24 hours.</p>
+                </div>
+
+                <!-- Error -->
+                <div id="formError" style="display:none;"
+                     class="mt-4 p-4 rounded-xl text-center border border-red-500 text-red-400"
+                     style="background:rgba(255,0,80,0.07);">
+                    <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                    <p class="mt-2 font-semibold">Failed to send.</p>
+                    <p id="errDetail" class="text-sm text-gray-400 mt-1"></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- ===== SHARED FOOTER ===== -->
+<footer class="bg-black/80 border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <div>
+            <a href="index.html" class="text-2xl font-bold neon-cyan">YADHRONICS</a>
+            <p class="text-sm text-gray-400 mt-4">Engineering the future, one project at a time.</p>
+        </div>
+        <div>
+            <h5 class="font-semibold">Quick Links</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="courses.html" class="hover:text-cyan-300 transition">Courses</a></li>
+                <li><a href="projects.html" class="hover:text-cyan-300 transition">Projects</a></li>
+                <li><a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a></li>
+                <li><a href="products.html" class="hover:text-cyan-300 transition">Store</a></li>
+                <li><a href="about.html" class="hover:text-cyan-300 transition">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Support</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="contact.html" class="hover:text-cyan-300 transition">Contact</a></li>
+                <li><a href="https://wa.me/918681847551" target="_blank" class="hover:text-cyan-300 transition">WhatsApp</a></li>
+                <li><a href="tel:+918681847551" class="hover:text-cyan-300 transition">+91 8681847551</a></li>
+                <li>yadhronics.edukid&#64;gmail.com</li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Social</h5>
+            <div class="flex gap-4 mt-4 text-xl">
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/918681847551" target="_blank" class="hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-xs text-gray-600 mt-12">&copy; 2025 Yadhronics &ndash; All rights reserved.</p>
+</footer>
+
+<!-- ① EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- ② Form handler — runs after SDK is loaded -->
+<script>
+(function () {
+    'use strict';
+
+    /* ── YOUR EMAILJS CREDENTIALS ────────────────────────────────────── */
+    var PUBLIC_KEY  = 'IXMvPIlLOmOjM2XLB';
+    var SERVICE_ID  = 'service_2onr5jy';
+    var TEMPLATE_ID = 'template_ea9qazr';
+    /* ─────────────────────────────────────────────────────────────────── */
+
+    /* Initialise EmailJS once */
+    emailjs.init({ publicKey: PUBLIC_KEY });
+
+    /* ── Mobile menu ──────────────────────────────────────────────────── */
+    var menuBtn    = document.getElementById('menuBtn');
+    var mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.addEventListener('click', function (e) {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    }
+
+    /* ── Form submit ──────────────────────────────────────────────────── */
+    var form       = document.getElementById('enquiryForm');
+    var submitBtn  = document.getElementById('submitBtn');
+    var successBox = document.getElementById('formSuccess');
+    var errorBox   = document.getElementById('formError');
+    var errDetail  = document.getElementById('errDetail');
+
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        /* Reset feedback */
+        successBox.style.display = 'none';
+        errorBox.style.display   = 'none';
+
+        /* Read values */
+        var name    = document.getElementById('fname').value.trim();
+        var email   = document.getElementById('femail').value.trim();
+        var phone   = document.getElementById('fphone').value.trim();
+        var message = document.getElementById('fmessage').value.trim();
+
+        /* Client-side validation */
+        if (!name) {
+            showError('Please enter your full name.');
+            document.getElementById('fname').focus();
+            return;
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            showError('Please enter a valid email address.');
+            document.getElementById('femail').focus();
+            return;
+        }
+        if (!phone || !/^\d{10}$/.test(phone)) {
+            showError('Please enter a valid 10-digit mobile number.');
+            document.getElementById('fphone').focus();
+            return;
+        }
+        if (!message) {
+            showError('Please enter your message.');
+            document.getElementById('fmessage').focus();
+            return;
+        }
+
+        /* Set phone field value to include +91 prefix before sending */
+        document.getElementById('fphone').value = '+91 ' + phone;
+
+        /* Disable button / show spinner */
+        submitBtn.disabled  = true;
+        submitBtn.innerHTML = '<span class="spinner"></span> Sending…';
+
+        /*
+         * sendForm() reads every input's  name=""  attribute and sends it
+         * as a template variable.  No manual templateParams object needed.
+         * Make sure your EmailJS template uses:
+         *   {{from_name}}  {{from_email}}  {{from_phone}}  {{subject}}  {{message}}
+         */
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form)
+            .then(function (response) {
+                console.log('EmailJS OK:', response.status, response.text);
+                successBox.style.display = 'block';
+                form.reset();
+                /* Restore phone field placeholder after reset */
+                document.getElementById('fphone').value = '';
+            })
+            .catch(function (err) {
+                console.error('EmailJS FAIL:', err);
+                var detail = '';
+                if (err && err.text)   detail = err.text;
+                else if (err && err.status) detail = 'Status ' + err.status;
+                else detail = JSON.stringify(err);
+                showError('Could not send. Reason: ' + detail + '. Please WhatsApp or call us directly.');
+            })
+            .finally(function () {
+                submitBtn.disabled  = false;
+                submitBtn.innerHTML = '<i class="fa-regular fa-paper-plane mr-2"></i> Submit Enquiry';
+            });
+    });
+
+    function showError(msg) {
+        errDetail.textContent    = msg;
+        errorBox.style.display   = 'block';
+        errorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadhronics - DIY Electronics & IoT Kits</title>
+    <meta name="description" content="Shop DIY electronics kits: IoT, robotics, educational boards, sensors, and more.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== SHARED HEADER ===== -->
+<header class="fixed top-0 left-0 w-full z-50 bg-glass border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold neon-cyan tracking-tighter">YADHRONICS</a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+            <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+            <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+            <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+            <a href="products.html" class="hover:text-cyan-300 transition font-semibold text-cyan-400">Store</a>
+            <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+            <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        </nav>
+        <div class="hidden md:block">
+            <a href="contact.html" class="btn-neon text-sm py-2 px-5">Get Project</a>
+        </div>
+        <button id="menuBtn" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 px-6 py-4 text-sm flex flex-col space-y-4">
+        <a href="index.html" class="hover:text-cyan-300 transition">Home</a>
+        <a href="courses.html" class="hover:text-cyan-300 transition">Courses</a>
+        <a href="projects.html" class="hover:text-cyan-300 transition">Projects</a>
+        <a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a>
+        <a href="products.html" class="hover:text-cyan-300 transition text-cyan-400 font-semibold">Store</a>
+        <a href="about.html" class="hover:text-cyan-300 transition">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition">Contact</a>
+        <a href="contact.html" class="btn-neon text-center mt-2">Get Project</a>
+    </div>
+</header>
+<!-- ===== END SHARED HEADER ===== -->
+
+<main class="pt-24">
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h1 class="text-5xl font-bold text-center">DIY <span class="neon-cyan">Electronics</span> Kits</h1>
+        <p class="text-center text-gray-400 mt-4 mb-16">Learn, build, innovate with our hands-on kits</p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <div class="h-48 bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/10 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fa-solid fa-wifi text-6xl neon-cyan opacity-60"></i>
+                </div>
+                <h3 class="text-xl font-semibold">IoT Starter Kit</h3>
+                <p class="text-gray-400 text-sm mt-1">ESP32, sensors, relays, cloud dashboard</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="neon-cyan font-bold text-lg">₹6,999</span>
+                    <a href="contact.html" class="btn-neon text-sm py-1 px-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <div class="h-48 bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/10 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fa-solid fa-robot text-6xl neon-magenta opacity-60"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Robotics Arm Kit</h3>
+                <p class="text-gray-400 text-sm mt-1">Servo motors, Arduino, gripper</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="neon-magenta font-bold text-lg">₹11,999</span>
+                    <a href="contact.html" class="btn-neon btn-neon-magenta text-sm py-1 px-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <div class="h-48 bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/10 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fa-solid fa-circle-nodes text-6xl neon-cyan opacity-60"></i>
+                </div>
+                <h3 class="text-xl font-semibold">PCB Design Kit</h3>
+                <p class="text-gray-400 text-sm mt-1">Breadboard, components, etching supplies</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="neon-cyan font-bold text-lg">₹4,999</span>
+                    <a href="contact.html" class="btn-neon text-sm py-1 px-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <div class="h-48 bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/10 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fa-solid fa-microchip text-6xl neon-magenta opacity-60"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Embedded Starter Kit</h3>
+                <p class="text-gray-400 text-sm mt-1">Arduino Mega, LCD, sensors bundle</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="neon-magenta font-bold text-lg">₹3,499</span>
+                    <a href="contact.html" class="btn-neon btn-neon-magenta text-sm py-1 px-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <div class="h-48 bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/10 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fa-solid fa-house-signal text-6xl neon-cyan opacity-60"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Home Automation Kit</h3>
+                <p class="text-gray-400 text-sm mt-1">NodeMCU, relay module, Blynk app</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="neon-cyan font-bold text-lg">₹2,999</span>
+                    <a href="contact.html" class="btn-neon text-sm py-1 px-4">Buy Now</a>
+                </div>
+            </div>
+            <div class="bg-glass p-6 rounded-2xl card-glow">
+                <div class="h-48 bg-gradient-to-br from-fuchsia-500/20 to-cyan-500/10 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fa-solid fa-brain text-6xl neon-magenta opacity-60"></i>
+                </div>
+                <h3 class="text-xl font-semibold">AI Vision Kit</h3>
+                <p class="text-gray-400 text-sm mt-1">Raspberry Pi, camera, TFLite models</p>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="neon-magenta font-bold text-lg">₹8,999</span>
+                    <a href="contact.html" class="btn-neon btn-neon-magenta text-sm py-1 px-4">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 bg-glass p-8 rounded-2xl text-center border border-white/10">
+            <p class="text-gray-300">Need a custom kit or bulk order for your college lab?</p>
+            <a href="contact.html" class="btn-neon mt-4 inline-block">Contact for bulk pricing →</a>
+        </div>
+    </section>
+</main>
+
+<!-- ===== SHARED FOOTER ===== -->
+<footer class="bg-black/80 border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <div>
+            <a href="index.html" class="text-2xl font-bold neon-cyan">YADHRONICS</a>
+            <p class="text-sm text-gray-400 mt-4">Engineering the future, one project at a time.</p>
+        </div>
+        <div>
+            <h5 class="font-semibold">Quick Links</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="courses.html" class="hover:text-cyan-300 transition">Courses</a></li>
+                <li><a href="projects.html" class="hover:text-cyan-300 transition">Projects</a></li>
+                <li><a href="rd.html" class="hover:text-cyan-300 transition">R&amp;D</a></li>
+                <li><a href="products.html" class="hover:text-cyan-300 transition">Store</a></li>
+                <li><a href="about.html" class="hover:text-cyan-300 transition">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Support</h5>
+            <ul class="text-sm space-y-2 mt-4 text-gray-400">
+                <li><a href="contact.html" class="hover:text-cyan-300 transition">Contact</a></li>
+                <li><a href="https://wa.me/918681847551" target="_blank" class="hover:text-cyan-300 transition">WhatsApp</a></li>
+                <li><a href="tel:+918681847551" class="hover:text-cyan-300 transition">+91 8681847551</a></li>
+                <li><a href="mailto:yadhronics.edukid@gmail.com" class="hover:text-cyan-300 transition">yadhronics.edukid@gmail.com</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-semibold">Social</h5>
+            <div class="flex gap-4 mt-4 text-xl">
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-cyan-300 transition"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/918681847551" target="_blank" class="hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-xs text-gray-600 mt-12">© 2025 Yadhronics – All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
