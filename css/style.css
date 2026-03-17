@@ -1,0 +1,117 @@
+/* ===== css/style.css ===== */
+* {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #0a0a0a;
+    color: #ededed;
+    scroll-behavior: smooth;
+}
+.neon-cyan {
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff;
+}
+.neon-magenta {
+    color: #f0f;
+    text-shadow: 0 0 8px #f0f;
+}
+.border-neon-cyan {
+    border-color: #0ff;
+    box-shadow: 0 0 15px #0ff;
+}
+.bg-glass {
+    background: rgba(20, 20, 30, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.card-glow {
+    transition: all 0.2s ease;
+    border: 1px solid rgba(0,255,255,0.2);
+}
+.card-glow:hover {
+    border-color: #0ff;
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+    transform: translateY(-4px);
+}
+.btn-neon {
+    background: transparent;
+    border: 1.5px solid #0ff;
+    color: #0ff;
+    padding: 0.6rem 1.8rem;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+.btn-neon:hover {
+    background: #0ff;
+    color: #0a0a0a;
+    box-shadow: 0 0 30px #0ff;
+}
+.btn-neon-magenta {
+    border-color: #f0f;
+    color: #f0f;
+}
+.btn-neon-magenta:hover {
+    background: #f0f;
+    color: #0a0a0a;
+    box-shadow: 0 0 30px #f0f;
+}
+.hero-bg {
+    background: radial-gradient(circle at 30% 40%, rgba(0, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+                #0a0a0a;
+    position: relative;
+    overflow: hidden;
+}
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><path d="M10 10 L90 10 M10 30 L90 30 M10 50 L90 50 M10 70 L90 70 M10 90 L90 90 M10 10 L10 90 M30 10 L30 90 M50 10 L50 90 M70 10 L70 90 M90 10 L90 90" stroke="%2300ffff" stroke-width="0.5"/></svg>') repeat;
+    pointer-events: none;
+}
+.grid-lines {
+    background-size: 50px 50px;
+    background-image: linear-gradient(to right, rgba(0,255,255,0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255,0,255,0.03) 1px, transparent 1px);
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+.float-anim {
+    animation: float 5s infinite ease-in-out;
+}
+.fade-up {
+    animation: fadeUp 0.8s forwards;
+    opacity: 0;
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form feedback */
+.form-success {
+    display: none;
+    background: rgba(0,255,255,0.1);
+    border: 1px solid #0ff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    color: #0ff;
+    margin-top: 1rem;
+}
+.form-error {
+    display: none;
+    background: rgba(255,0,100,0.1);
+    border: 1px solid #f06;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    color: #f06;
+    margin-top: 1rem;
+}
